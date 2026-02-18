@@ -1,0 +1,57 @@
+.header {
+  width: 100%;
+  position: absolute;
+}
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ffffff;
+}
+.header-title {
+ position: relative;
+  font-family: "Playwrite NZ Basic", cursive;
+  color: #ffff;
+}
+
+.header-img {
+    position: absolute;
+    right: -30px;
+    width: 40px;
+    rotate: 20deg;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 20px 20px;
+  }
+
+  .header-title {
+    font-size: 32px;
+
+  }
+
+  .header-img {
+    position: relative;
+    right: 10px;
+    width: 35px;
+    rotate: 15deg;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 20px 20px;
+  }
+
+  .header-title {
+    font-size: 24px;
+  }
+
+  .header-img {
+    width: 30px;
+    rotate: 10deg;
+  }
+}

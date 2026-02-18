@@ -1,0 +1,123 @@
+.section-reasons {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    background: url(./../../imgs/bg-reasons.webp);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+ 
+    border-top: 6px solid #bb00ac;
+    box-shadow: 0 -2px 20px #bb00ac;
+
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 -2px 15px #bb00ac;
+    }
+    50% {
+        box-shadow: 0 -2px 25px #bb00ac;
+    }
+    100% {
+        box-shadow: 0 -2px 15px #bb00ac;
+    }
+}
+.section-reasons-container {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.641);
+    height: 100%;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-reasons-title {
+  text-align: center;
+  font-family: "Playwrite NZ Basic", cursive;
+  font-size: 42px;
+  color: #ffff;
+}
+.section-reasons-list {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.405);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    width: fit-content;
+}
+.section-reasons-item {
+    font-family: "Playwrite NZ Basic", cursive;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    text-align: center;
+    color: #ffff;
+    
+    background-color: #ffffff5d;
+    padding: 5px;
+    border-radius: 10px;
+}
+.section-reasons-svg {
+  width: 60px;
+}
+
+@media (max-width: 1200px) {
+  .section-reasons-title {
+    font-size: 32px;
+  }
+  .section-reasons-item {
+    font-size: 22px;
+    width: 250px;
+  }
+  .section-reasons-svg {
+    width: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-reasons-title {
+    font-size: 26px;
+  }
+  .section-reasons-item {
+    font-size: 18px;
+    width: 200px;
+  }
+  .section-reasons-svg {
+    width: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+    .section-reasons-list {
+        flex-direction: column;
+    }
+    .section-reasons-item {
+        width: 100%;
+        font-size: 24px;
+    }
+    .section-reasons-svg {
+        width: 40px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .section-reasons-title {
+        font-size: 22px;
+    }
+    .section-reasons-item {
+        font-size: 18px;
+    }
+    .section-reasons-svg {
+        width: 30px;
+    }
+}
